@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="./assets/css/index.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <span class="titulo">
+            O JOGO DA FORCA
+        </span>
+        <div id="palavra-misteriosa">
+        </div>
+        <div id="alfabeto">
+            <span class="letra-do-alfabeto">A</span>
+            <span class="letra-do-alfabeto">B</span>
+            <span class="letra-do-alfabeto">C</span>
+            <span class="letra-do-alfabeto">D</span>
+            <span class="letra-do-alfabeto">E</span>
+            <span class="letra-do-alfabeto">F</span>
+            <span class="letra-do-alfabeto">G</span>
+            <span class="letra-do-alfabeto">H</span>
+            <span class="letra-do-alfabeto">I</span>
+            <span class="letra-do-alfabeto">J</span>
+            <span class="letra-do-alfabeto">K</span>
+            <span class="letra-do-alfabeto">L</span>
+            <span class="letra-do-alfabeto">M</span>
+            <span class="letra-do-alfabeto">N</span>
+            <span class="letra-do-alfabeto">O</span>
+            <span class="letra-do-alfabeto">P</span>
+            <span class="letra-do-alfabeto">Q</span>
+            <span class="letra-do-alfabeto">R</span>
+            <span class="letra-do-alfabeto">S</span>
+            <span class="letra-do-alfabeto">T</span>
+            <span class="letra-do-alfabeto">U</span>
+            <span class="letra-do-alfabeto">V</span>
+            <span class="letra-do-alfabeto">W</span>
+            <span class="letra-do-alfabeto">X</span>
+            <span class="letra-do-alfabeto">Y</span>
+            <span class="letra-do-alfabeto">Z</span>
+        </div>
+        <div id="info">
+            <section id="tema-e-recomecar">
+                Tema: <span id="tema"></span>
+                <button id="recomecar" class="btn" onclick="reiniciar()">Recomeçar</button>
+            </section>
+            <section id="erros">
+                Erros: <span id="quant-de-erros">0</span>
+            </section>
+        </div>
+    </div>
+    <div id="info-para-recomecar">
+        <span class="titulo" id="titulo-das-infos">
+            O JOGO DA FORCA
+        </span>
+        <form action="#" id="formulario-para-iniciar">
+            <label for="info-palavra-misteriosa">Palavra: </label>
+            <input type="text" class="ipt" id="info-palavra-misteriosa" maxlength="20" required><span id="aviso-info-palavra" style="color: red;"></span><br><br>
+            <label for="info-tema-palavra-misteriosa">Tema: </label>
+            <input type="text" class="ipt" id="info-tema-palavra-misteriosa" maxlength="20" required><span id="aviso-info-tema" style="color: red;"></span><br><br>
+            <label for="info-quant-de-erros">Erros: </label>
+            <input type="number" class="ipt" id="info-quant-de-erros" required min="1" max="15" value="1"><br><br>
+            <button id="iniciar" class="btn" type="submit">Iniciar</button>
+        </form>
+    </div>
+    <script defer src="./assets/js/index.js"></script>
+</body>
+</html>
