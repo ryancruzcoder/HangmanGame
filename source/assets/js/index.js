@@ -80,7 +80,6 @@ function colocarLetra(l){
             
         }
     } 0
-    console.log( letrasAcertadas , PalavraMisteriosa.length)
     if (letrasAcertadas === PalavraMisteriosa.length){
         titleFormReplay.innerText = "GAME WIN"
         divRecomecar.style.display = "flex"
